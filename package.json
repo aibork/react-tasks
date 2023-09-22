@@ -7,11 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "build-css": "tailwindcss build src/index.css -o src/styles.css",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tw-elements": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",

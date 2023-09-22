@@ -23,15 +23,15 @@ function TaskForm() {
                 <input placeholder="Escribe tu tarea"
                     onChange={(e) => setTitle(e.target.value)}
                     value={title}
-                    className='bg-slate-300 p-3 w-full mb-3'
+                    className='bg-slate-300 p-3 w-full mb-3 rounded-md isRequired'
                     autoFocus
                 />
                 <textarea placeholder='Descripcion de la tarea'
                     onChange={(e) => setDescription(e.target.value)}
-                    className='bg-slate-300 p-3 w-full mb-2'
+                    className='bg-slate-300 p-3 w-full mb-2 rounded-md resize-none isRequired'
                     value={description}>
                 </textarea>
-                <button className='bg-indigo-500 px-3 py-1 text-white hover:bg-indigo-800'>
+                <button className='bg-indigo-500 px-3 py-1 rounded-md text-white hover:bg-indigo-800'>
                     Guardar
                 </button>
             </form>
